@@ -53,7 +53,7 @@ https://github.com/nehaoza/charging-system/actions/workflows/maven.yml
 
 ## **What it does?**
 1. Checks formatting of the code with [spotless plugin](https://github.com/diffplug/spotless) and [fails otherwise during build]()
-2. Checks code quality with [error-prone plugin](https://github.com/google/error-prone) and [fails otherwise during build]()
+2. Checks code quality with [error-prone plugin](https://github.com/google/error-prone) and [fails otherwise during build](https://github.com/nehaoza/charging-system/actions/runs/4667167591/jobs/8262616624?pr=4)
 3. Compiles and builds the code
 4. Runs Unit tests and Integration tests inside GitHub Actions container
 5. Publishes cucumber reports as a part of [GitHub Actions](https://github.com/nehaoza/charging-system/actions/runs/4666902150/jobs/8262030963#step:5:277). Sample collection can be [found here](https://reports.cucumber.io/report-collections/b5a28dca-3018-4a8e-87fb-b7764077f074).
