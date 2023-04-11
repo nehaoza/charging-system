@@ -36,6 +36,10 @@ mvnw.cmd clean test
 
 # **Continuous Integration with GitHub Actions**
 
+## **Manually triggering the build**
+Navigate to `Actions` -> `Run Charge System Tests` -> on right and side corner click on `Run Workflow` and click on `Run Workflow` button to trigger the build.
+It will trigger the build and execute unit tests and integration test. This workflow will also expose the cucumber reports which can be seen in the [GitHub Actions workflow logs](https://github.com/nehaoza/charging-system/actions/runs/4666902150/jobs/8262030963#step:5:277).
+
 ## **When it triggers?**
 1. When committed to main branch
    https://github.com/nehaoza/charging-system/actions/runs/4666641012/jobs/8261455499
@@ -52,7 +56,8 @@ https://github.com/nehaoza/charging-system/actions/workflows/maven.yml
 2. Checks code quality with [error-prone plugin](https://github.com/google/error-prone) and [fails otherwise during build]()
 3. Compiles and builds the code
 4. Runs Unit tests and Integration tests inside GitHub Actions container
-7. Runs Jacoco code coverage to check 90% coverage and [fails otherwise during build](https://github.com/nehaoza/charging-system/actions/runs/4665965591/jobs/8259990082?pr=2)
+5. Publishes cucumber reports as a part of [GitHub Actions](https://github.com/nehaoza/charging-system/actions/runs/4666902150/jobs/8262030963#step:5:277). Sample collection can be [found here](https://reports.cucumber.io/report-collections/b5a28dca-3018-4a8e-87fb-b7764077f074).
+6. Runs Jacoco code coverage to check 90% coverage and [fails otherwise during build](https://github.com/nehaoza/charging-system/actions/runs/4665965591/jobs/8259990082?pr=2)
 
 
 # **Achieves**
