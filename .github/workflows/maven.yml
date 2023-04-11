@@ -21,7 +21,7 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Spotless Check
-      run: mvnw.cmd spotless:check
+      run: ./mnvw spotless:check
     - name: Run Unit Tests and Integration Tests with Maven
-      run: mvnw.cmd -B clean install --file pom.xml
+      run: ./mnvw -B clean install --file pom.xml
 
