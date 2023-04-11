@@ -42,10 +42,10 @@ It will trigger the build and execute unit tests and integration test. This work
 
 ## **When it triggers?**
 1. When committed to main branch
-   https://github.com/nehaoza/charging-system/actions/runs/4666641012/jobs/8261455499
+https://github.com/nehaoza/charging-system/actions/runs/4666641012/jobs/8261455499
 
 2. When Merge request is raised against main branch
-   https://github.com/nehaoza/charging-system/pull/2
+https://github.com/nehaoza/charging-system/pull/2
 
 GitHub Actions flow -
 https://github.com/nehaoza/charging-system/actions/workflows/maven.yml
