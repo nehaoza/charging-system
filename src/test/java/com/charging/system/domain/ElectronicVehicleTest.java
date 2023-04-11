@@ -13,7 +13,7 @@ import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
 @RunWith(Parameterized.class)
 public class ElectronicVehicleTest {
 
-  private int chargeLevel;
+  private final int chargeLevel;
 
   public ElectronicVehicleTest(int chargeLevel) {
     this.chargeLevel = chargeLevel;
