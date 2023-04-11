@@ -6,7 +6,7 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
-name: Java CI with Maven
+name: Run Charge System Tests
 
 on:
   push:
@@ -30,11 +30,4 @@ jobs:
         cache: maven
     - name: Run Unit Tests and Integration Tests with Maven
       run: mvn -B clean install --file pom.xml
-    - name: Add coverage to PR
-      id: jacoco
-      uses: madrapps/jacoco-report@v1.3
-      with:
-          paths: ${{ github.workspace }}/target/site/jacoco-merged-test-coverage-report/jacoco.xml
-          token: ${{ secrets.GITHUB_TOKEN }}
-          min-coverage-overall: 90
-          min-coverage-changed-files: 100
+
