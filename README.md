@@ -37,7 +37,7 @@ mvnw.cmd clean test
 # **Continuous Integration with GitHub Actions**
 
 ## **Manually triggering the build**
-Navigate to `Actions` -> `Run Charge System Tests` -> on right and side corner click on `Run Workflow` and click on `Run Workflow` button to trigger the build.
+Navigate to [Actions -> Run Charge System Tests](https://github.com/nehaoza/charging-system/actions/workflows/maven.yml) -> on right and side corner click on `Run Workflow` and click on `Run Workflow` button to trigger the build.
 It will trigger the build and execute unit tests and integration test. This workflow will also expose the cucumber reports which can be seen in the [GitHub Actions workflow logs](https://github.com/nehaoza/charging-system/actions/runs/4666902150/jobs/8262030963#step:5:277).
 
 ## **When it triggers?**
