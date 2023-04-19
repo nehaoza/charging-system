@@ -9,8 +9,4 @@ import org.junit.runner.RunWith;
         features = {"classpath:features"},
         glue = {"com.charging.system.steps"})
 public class CucumberRunner {
-
-  public CucumberRunner() {
-    System.out.println("******************* IT");
-  }
 }

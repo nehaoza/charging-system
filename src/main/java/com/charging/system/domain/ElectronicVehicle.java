@@ -6,7 +6,7 @@ public class ElectronicVehicle {
     private final int currentCharge;
 
     public ElectronicVehicle(final int currentCharge) {
-        if (currentCharge < 0 || currentCharge > 100) {
+        if (currentCharge <= 0 || currentCharge >= 100) {
             throw new InvalidChargeLevelException(
                     "Please provide a valid charging level of the vehicle from 0-100.");
         }

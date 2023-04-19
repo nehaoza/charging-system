@@ -56,6 +56,8 @@ public class BusDepotService {
         var charge = 0;
         if (localTime.isBefore(LocalTime.parse("08:00:00"))) {
             charge = 90;
+        } else if (localTime.equals(LocalTime.of(8, 0, 0))) {
+            charge = 55;
         } else if (timeIsBetween(localTime, "08:00:00", "11:00:00")) {
             charge = 50;
         } else if (currentCharge > 50 && timeIsBetween(localTime, "18:00:00", "23:59:59")) {

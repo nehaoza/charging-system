@@ -78,6 +78,16 @@ Feature: Test Bus Depot Service to charge or discharge Electric Vehicles based o
       | 10:59:59     |
 
   @SchoolBus
+  Scenario Outline: Discharge School Bus with 55% if connected at 8.00 AM
+    Given the Bus Depot Service is running
+    And the "School Bus" arrives for charging
+    When the vehicle is connected to the charging station at "<arrival-time>"
+    Then the vehicle should be discharged to 55%
+    Examples:
+      | arrival-time |
+      | 08:00:00    |
+
+  @SchoolBus
   Scenario Outline: Charge or Discharge School Bus as per any other EV if connected after 11.00 AM till midnight
     Given the Bus Depot Service is running
     And the "School Bus" with a charge level of <current-charge-level>% arrives for charging
